@@ -10,7 +10,7 @@ def happy_number(n)
 	sumofexponents =0
 	equalcheck_ary = [0] #set an array to push on to so we can check for infinite loops
 	while sumofexponents != 1 #make sure sumofexponents doesn't equal 1, aka not a happy number
-		num_ary = n.to_s.split("").map! { |e| e.to_i } #split argument 'n' into indiviudal digits
+		num_ary = n.to_s.scan(/./).map { |e| e.to_i } #split argument 'n' into indiviudal digits
 		
 		equalcheck_ary = equalcheck_ary.push num_ary	#push num_ary to equalcheckary
 			if equalcheck_ary.uniq.length != equalcheck_ary.length #check if length of equalcheck without duplicates was the same as equalcheck

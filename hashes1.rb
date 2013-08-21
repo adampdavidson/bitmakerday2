@@ -24,7 +24,8 @@ hash1 = {"a" => 1, "b" => 2, "c" => 3}
 hash2 = {"a" => 1, "b" => 2, "c" => 3, "d" => 1}
 hash3 = {"a" => 1, "b" => 2, "c" => 3, "d" => 1}
 
-p hash1.keys_of(1)
-p hash2.keys_of(1)
-p hash3.keys_of(1,2)
+puts hash1.keys_of(1).inspect
+puts hash2.keys_of(1).inspect
+puts hash3.keys_of(1,2).inspect
+
 
